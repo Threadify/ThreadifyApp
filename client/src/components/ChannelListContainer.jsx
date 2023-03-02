@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChannelList, useChatContext } from 'steam-chat-react'
 import Cookies from 'universal-cookie';
-import { ChannelSearch, DirectMessage } from './';
+import { ChannelSearch, DirectMessage } from '.';
 import threadifyIcon from '../assets/threadify.png'
 import LogoutIcon from '../assets/logout.png'
 const SideBar = () => (
