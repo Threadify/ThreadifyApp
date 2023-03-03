@@ -1,6 +1,6 @@
 export { default as ChannelContainer } from './ChannelContainer';
 export { default as ChannelListContainer } from './ChannelListContainer';
-// export { default as ChannelSearch } from './ChannelSearch';
+export { default as ChannelSearch } from './ChannelSearch';
 // export { default as TeamChannelList } from './DirectMessageList';
 // export { default as TeamChannelPreview } from './DirectMessagePreview';
 // export { default as ChannelInner } from './ChannelInner';

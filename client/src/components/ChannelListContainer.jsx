@@ -1,7 +1,7 @@
 import React from 'react';
-// import { ChannelList, useChatContext } from 'stream-chat-react'
-// import Cookies from 'universal-cookie';
-// import { ChannelSearch, DirectMessage } from '.';
+import { ChannelList, useChatContext } from 'stream-chat-react' 
+import Cookies from 'universal-cookie';
+import ChannelSearch from './ChannelSearch';
 import threadifyIcon from '../assets/threadify.png'
 import LogoutIcon from '../assets/logout.png'
 
@@ -20,10 +20,20 @@ const SideBar = () => (
     </div>
 )
 
+const CompanyHeader = () => (
+    <div className='channel-list__header'>
+        <p className='channel-list__header__text'>Threadify Messenger</p>
+    </div>
+)
+
 const ChannelListContainer = () => {
     return (
         <>
         <SideBar />
+        <div className="channel-list__list__wrapper">
+            <CompanyHeader />
+            <ChannelSearch />
+        </div>
         </>
     );
 }
