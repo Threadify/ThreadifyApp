@@ -1,7 +1,9 @@
 import React from 'react';
-// import { ChannelList, useChatContext } from 'stream-chat-react'
-// import Cookies from 'universal-cookie';
-import { ChannelSearch, GeneralChannelList, GeneralChannelPreview } from '.';
+import ChannelSearch from './ChannelSearch';
+import GeneralChannelPreview from '.GeneralChannelPreview'
+import GeneralChannelList from './GenneralChannelList';
+
+
 import threadifyIcon from '../assets/threadify.png'
 import LogoutIcon from '../assets/logout.png'
 import { ChannelList, ThreadHeader } from 'stream-chat-react';
@@ -18,6 +20,12 @@ const SideBar = () => (
                 <img src={LogoutIcon} alt="Logout" width="30" />
             </div>
         </div>
+    </div>
+)
+
+const CompanyHeader = () => (
+    <div className='channel-list__header'>
+        <p className='channel-list__header__text'>Threadify Messenger</p>
     </div>
 )
 
