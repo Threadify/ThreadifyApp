@@ -1,9 +1,12 @@
 import React from 'react';
-import { ChannelList, useChatContext } from 'stream-chat-react' 
-import Cookies from 'universal-cookie';
 import ChannelSearch from './ChannelSearch';
+import GeneralChannelPreview from '.GeneralChannelPreview'
+import GeneralChannelList from './GenneralChannelList';
+
+
 import threadifyIcon from '../assets/threadify.png'
 import LogoutIcon from '../assets/logout.png'
+import { ChannelList, ThreadHeader } from 'stream-chat-react';
 
 const SideBar = () => (
     <div className="channel-list__sidebar">
@@ -29,11 +32,27 @@ const CompanyHeader = () => (
 const ChannelListContainer = () => {
     return (
         <>
-        <SideBar />
-        <div className="channel-list__list__wrapper">
-            <CompanyHeader />
-            <ChannelSearch />
-        </div>
+            <SideBar />
+            <div className='channel-list__list__wrapper'>
+                <ThreadHeader />
+                <ChannelSearch />
+                <ChannelList
+                filters={{}}
+                channelRenderFilterFn={() => { }}
+                List={(listProps) => (
+                    <GeneralChannelList
+                    {...listProps}
+                    type="general"
+                    />
+                )}
+                Preview={(previewProps) => (
+                    <GeneralChannelPreview
+                    {...previewProps}
+                    type="general"
+                    />
+                )}
+        />
+            </div>
         </>
     );
 }
