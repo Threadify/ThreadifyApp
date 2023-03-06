@@ -32,6 +32,10 @@ Keonte Thompson, Adam Lieberman, Salvatore Tocco, Cody Andrews
 kmgt42@gmail.com
 github.com/kthom42
 
+salvatore
+salvot.biz@gmail.com
+https://github.com/salvo-t
+
 ## License
 
 Licensed under the [ISC](https://choosealicense.com/licenses/isc/) license
