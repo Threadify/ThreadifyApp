@@ -28,15 +28,15 @@ const ChannelContainer = ({ isCreating, setIsCreating, isEditing, setIsEditing, 
     )
 
     return (
-        <div className=" channel__container">
-            <Channel
-                EmptyStateIndicator={EmptyState}
-                Message={(messageProps, i) =Simple key={i} {...messageProps} />}
-            >
-                <ChannelInner setIsEditing={setIsEditing} />
-            </Channel>
+        <div className="channel__container">
+          <Channel
+            EmptyStateIndicator={EmptyState}
+            Message={(messageProps, i) => <MessageSimple key={i} {...messageProps} />}
+          >
+            <ChannelInner setIsEditing={setIsEditing} />
+          </Channel>
         </div>
-    );
+      );
 }
 
 export default ChannelContainer;
