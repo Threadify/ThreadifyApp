@@ -1,7 +1,7 @@
 import React from 'react';
 import ChannelSearch from './ChannelSearch';
-import GeneralChannelPreview from '.GeneralChannelPreview'
-import GeneralChannelList from './GenneralChannelList';
+import GeneralChannelPreview from './GeneralChannelPreview'
+import GeneralChannelList from './GeneralChannelList';
 
 
 import threadifyIcon from '../assets/threadify.png'
@@ -34,7 +34,7 @@ const ChannelListContainer = () => {
         <>
             <SideBar />
             <div className='channel-list__list__wrapper'>
-                <ThreadHeader />
+                <CompanyHeader />
                 <ChannelSearch />
                 <ChannelList
                 filters={{}}
