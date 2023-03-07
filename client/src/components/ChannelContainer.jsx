@@ -35,6 +35,7 @@ const ChannelContainer = ({ isCreating, setIsCreating, isEditing, setIsEditing, 
           >
             <ChannelInner setIsEditing={setIsEditing} />
           </Channel>
+
         </div>
       );
 }
