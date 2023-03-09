@@ -13,7 +13,7 @@
 
 ## Description
 
-A realtime messaging app that can be used for casual conversation, or as a way for employers to stay connected with employees.
+An app to take notes to keep track of things that can be going on with work or life in general.
 
 ## Usage
 
@@ -36,7 +36,9 @@ salvatore -
 salvot.biz@gmail.com -
 https://github.com/salvo-t
 
-Adam - https://github.com/AdamLebo
+Adam Lieberman - https://github.com/AdamLebo
+
+Cody Andrews - https://github.com/sorryz23
 
 ## License
 
