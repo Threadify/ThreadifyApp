@@ -11,23 +11,24 @@ const api_secret = process.env.STREAM_API_SECRET;
 const app_id = process.env.STREAM_APP_ID;
 
 const signup = async (req, res) => {
+    console.log('hello')
     try {
         const { fullName, username, password, phoneNumber } = req.body;
-
+        console.log(req.body)
         const userId = crypto.randomBytes(16).toString('hex')
-
+        console.log(userId)
         const serverClient = connect(api_key, api_secret, app_id);
-
+        console.log(serverClient)
         const hashedPassword = await bcrypt.hash(password, 10);
 
         const token = serverClient.createUserToken(userId);
-
+        console.log('token created')
         res.status(200).json({ token, fullName, username, userId, hashedPassword, phoneNumber })
 
     } catch (error) {
         console.log(error)
 
-        resizeBy.status(500).json({ message: error });
+        res.status(500).json({ message: error });
     }
 };
 
