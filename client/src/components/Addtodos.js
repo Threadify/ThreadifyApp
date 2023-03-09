@@ -17,7 +17,7 @@ const Addtodos = () => {
     date:''
   })
   const { loading, error, data } = useQuery(GET_TODO, {
-    varaiables: { id: selectedId }, onCompleted: (data) => setTodo(data.getTodo)
+    variables: { id: selectedId }, onCompleted: (data) => setTodo(data.getTodo)
   })
 
   const inputAreaRef = useRef()
