@@ -7,12 +7,12 @@ import { TodoContext } from '../TodoContext'
 
 const Todo = ({id, title, date, detail}) => {
   const {selectedId, setSelectedId} = useContext(TodoContext)
-  const [deleteTodo] = useMutation(DELETE_TODO);
+  const [deleteTodo] = useMutation(DELETE_TODO) ;
   const removeTodo = (id) => {
     deleteTodo({
       variables:{
         id:id
-      },refetchQueries: [
+      }, refetchQueries: [
         { query: GET_TODOS }
       ]
     })
