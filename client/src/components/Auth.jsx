@@ -28,10 +28,10 @@ const Auth = () => {
 
         const { username, password, phoneNumber, avatarURL } = form;
 
-        const URL = 'https://localhost:5000/auth';
+        
         // const URL = 
 
-        const { data: { token, userId, hashedPassword, fullName } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
+        const { data: { token, userId, hashedPassword, fullName } } = await axios.post(isSignup ? '/signup' : '/login', {
             username, password, fullName: form.fullName, phoneNumber, avatarURL,
         });
 
@@ -46,7 +46,7 @@ const Auth = () => {
             cookies.set('hashedPassword', hashedPassword);
         }
 
-        window.location.reload(true);
+        // window.location.reload(true);
     }
     const switchMode = () => {
         setForm(initialState); // reset form when switching mode

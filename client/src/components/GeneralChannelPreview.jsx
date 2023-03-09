@@ -32,7 +32,7 @@ export const GeneralChannelPreview = ({ channel, type }) => {
             console.log(channel);
         }}
         >
-            {type == 'team' ? <ChannelPreview /> : <DirectPreview />}
+            {type == 'general' ? <ChannelPreview /> : <DirectPreview />}
 
         
         </div>

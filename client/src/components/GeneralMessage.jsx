@@ -7,7 +7,7 @@ const GeneralMessage = () => {
     return (
         <MessageSimple
             message={{ ...message, user: {}}}
-            // handleOpenThread={}
+            //  handleOpenThread={}
         />
     )
 }
