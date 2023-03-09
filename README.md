@@ -36,6 +36,8 @@ salvatore
 salvot.biz@gmail.com
 https://github.com/salvo-t
 
+Adam - https://github.com/AdamLebo
+
 ## License
 
 Licensed under the [ISC](https://choosealicense.com/licenses/isc/) license
