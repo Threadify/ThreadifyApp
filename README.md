@@ -17,7 +17,7 @@ A realtime messaging app that can be used for casual conversation, or as a way f
 
 ## Usage
 
-used for instant on the go communication
+Our planner app will help you stay on task throughout the day.
 
 ## Installation
 
