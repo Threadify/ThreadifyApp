@@ -1,10 +1,11 @@
 const { connect } = require('getstream');
 const bcrypt = require('bcrypt');
-const SreamChat = require('stream-chat');
+const StreamChat = require('stream-chat').StreamChat;
 const crypto = require('crypto');
-const { StreamChat } = require('stream-chat');
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+
+require('dotenv').config();
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
 const api_key = process.env.STREAM_API_KEY;
 const api_secret = process.env.STREAM_API_SECRET;
 const app_id = process.env.STREAM_APP_ID;
