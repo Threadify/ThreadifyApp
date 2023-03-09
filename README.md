@@ -32,8 +32,8 @@ Keonte Thompson, Adam Lieberman, Salvatore Tocco, Cody Andrews
 kmgt42@gmail.com
 github.com/kthom42
 
-salvatore
-salvot.biz@gmail.com
+salvatore - 
+salvot.biz@gmail.com -
 https://github.com/salvo-t
 
 Adam - https://github.com/AdamLebo
